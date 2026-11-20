@@ -1,6 +1,6 @@
 # The Laws of Thaumic Physics
 
-*Version 1.1. The magic system for The Thrum.*
+*Version 1.2. The magic system for The Thrum.*
 
 See also: [Examples](EXAMPLES.md) · [Open questions](OPEN_QUESTIONS.md)
 
@@ -51,11 +51,13 @@ Magic can become any ordinary form of energy, at about 5 kJ per Mote.
 
 **Alchemy is archmage work.** Chemical energy can be pulled out of one substance and used to build another. For example, burning oil down to ash can power turning wood into something like plastic. It's slow and needs full concentration, plus years of study of the substances involved. A master who has done it for decades makes a few ounces an hour, a pound at best. Starting characters can't do it at all.
 
+**Shaping matter costs more for detail.** Shaping or shattering a cubic foot of stone or wood costs 1 Mote for a rough shape (a wall, a ramp, a hole). Fine work, like a hinge or a blade's edge, costs x2. Intricate work, like a lock, a gear train or jewelry, costs x4. Cutting away a load-bearing piece is a Release trigger: the cut costs what it costs, and the world pays for the collapse. Magic shapes but doesn't give skill, so anything meant to be good, not just shaped, still needs a crafting check. Skilled craftsmen stay in business.
+
 ## Life and healing
 
 Living flesh carries **life force**; dead matter doesn't. The body has a limited amount of life force available, and it restores naturally at a steady rate. Forcing an arm to regrow is easy with magic, but making it **alive** is hard.
 
-- **Life Force dice.** (d6 each) They are the body's limited life reserve, and a long rest restores half your maximum. (Round up)
+- **Life Force dice.** (d6 each) Adventurers have one per level, with a minimum of 2. They are the body's limited life reserve, and a long rest restores half your maximum (round up), or all of them in a Rich place. A hearty meal of fresh food also restores 1 die, once a day.
 - **Healing has two jobs: regrow and enliven.** Spend a Life Force die and roll 1d6 + Con. Half the roll regrows broken flesh (HP) and half makes it alive, so on its own a die heals half its roll (round up).
 - **A healer's magic can do all the regrowing.** Magic regrows flesh at 1d6 per Mote, and then each Life Force die spent goes entirely to making it alive. A healer and patient working together heal about twice as fast.
 - **Regrown but not alive** is grey flesh. A wound healed with grey flesh counts as temporary HP. Grey flesh only replaces what was lost, so it can never take you above your body's max HP, and regrowth can't add new body parts. Someone who loses both legs and regrows them grey is back to full HP, but about 40% of it is temporary. Sensation is deadened, as if the limb were asleep, and Dexterity suffers (-1 per grey limb). Grey flesh that gets no life force within a day calls for a DC 10 Constitution saving throw for each grey limb, at disadvantage if the patient didn't rest. On a failure, that limb becomes necrotic and stays that way until it is healed with life force. Limbs with necrotic wounds must be amputated after 1 week or the body takes 1/3 HP poison damage per day. At that point the limb loses all function: it can't grip, carry or bear weight.
@@ -81,7 +83,9 @@ To affect a mind, magic has to reach through the portal and act on the soul's si
 - **The soul's skin.** The target makes a Wisdom save. On a success the energy spreads across the skin and dissipates as harmless Residue.
 - **Conversions on the soul's side** (starting guesses): 1 Mote nudges an emotion for a round or reads surface mood · 3 Motes sends a thought or plants a short suggestion · sleep or calm costs Motes equal to the target's level · a charm lasting an hour costs twice the target's level.
 
-**Death and resurrection.** When the body dies, the portal closes but the soul still exists. Its skin slowly erodes into Chaos, over about 10 days as a starting value. Bringing someone back means repairing the body (see Life and healing) and then reopening the portal with tuned magic (5 Motes per level of the dead) before the skin dissolves.
+  **Scaling mental effects.** Duration: the costs above last one round, and each step up (a minute, an hour, a day) doubles the cost. Control: an effect that gives orders rather than nudging a feeling costs +50%. Repeats: every attempt on the same creature within a day, whether it worked or not, gives them +2 on their next save against mind magic, and the bonus stacks. Awareness: the target feels something reaching into their mind unless the caster's spellcasting check beats their passive Wisdom (Insight). True names: knowing someone's true name makes the magic resonant (x1), but they still get advantage on the save, because a soul guards its name.
+
+**Death and resurrection.** When the body dies, the portal closes but the soul still exists. Its skin slowly erodes into Chaos, over about 10 days as a starting value. Bringing someone back means repairing the body (see Life and healing) and then reopening the portal with tuned magic (5 Motes per level of the dead) before the skin dissolves. That is far more than one action allows, so resurrection is a ritual: one caster or a circle pours in up to capacity each action until the cost is paid, while someone keeps the portal tuned the whole time (see Reconnection).
 
 - **Reconnection.** Healing the body isn't enough: mind and body have to re-link. While the body's ports stand open and empty, other things may come knocking, such as wandering souls or something from the Chaos. The caster has to keep the portal tuned to the right soul; a strong link (hair, a true name, a loved one present) makes that easier, and a weak one invites possession.
 - **Soul aging.** A soul cut off from its body loses its physical anchor and ages fast: **10 years per day** dead. Someone revived after 3 days returns as a 30-years-older soul in their young body. They think, move and tire like an older person. Some of that fades over the next few weeks, but not all of it.
@@ -99,7 +103,7 @@ These benchmarks anchor the numbers. Since 1 Mote is about 1d6 (3.5 damage), a f
 | Commoner | 12 | 2 |
 | Trained soldier | 20 | 3 |
 | Elite soldier, the best a body can get | 30 | 4 |
-| Level 1 adventurer (an advanced farmer) | 14 | 1 |
+| Level 1 adventurer (an advanced farmer) | 14 | 2 |
 | Level 5 adventurer | 30 | 5 |
 | Level 10 adventurer | 30 body + 20 tuned = 50 | 10 |
 | Level 20 hero | 30 body + 50 tuned = 80 | 20 |
@@ -118,6 +122,33 @@ These benchmarks anchor the numbers. Since 1 Mote is about 1d6 (3.5 damage), a f
 | Shape or shatter a cubic foot of stone | Once shaped, it stays; matter has no duration |
 | Light a room for an hour | Or a blinding flash for one round |
 | Regrow 1d6 HP of flesh | It stays grey until Life Force dice make it alive; see Life and healing |
+
+### Mote cost examples
+
+Common spells and actions, worked out with the laws: base Motes, then distance (touch x1, within 60 ft x1.5, in sight x2), then sympathy, rounded up. Burn is the cost divided by 4, rounded up. A level 5 caster has capacity 7.
+
+| Action | Cost | How it adds up | Burn |
+| --- | --- | --- | --- |
+| Light a candle or campfire by touch | 1 | A spark at touch | 1 |
+| Light a room for an hour | 1 | Table rate | 1 |
+| Shove a door open or knock someone down | 1 | 1 Mote of force at touch | 1 |
+| Leap 10 ft straight up | 1 | Lifting yourself 10 ft | 1 |
+| Freeze a bucket of water | 1 | A heat loan | 1 |
+| Throw a fist-sized rock at someone 60 ft away (1d6) | 2 | 1 x 1.5, rounded up | 1 |
+| Hurl a boulder at someone 60 ft away (3d6) | 5 | 3 x 1.5, rounded up | 2 |
+| Fire bolt at one target 60 ft away (2d6) | 3 | 2 x 1.5 | 1 |
+| Fireball, 6d6 burst 60 ft away | 9 | 6 x 1.5. Over capacity 7: a torch's sympathy brings it to 6, or the caster strains | 3 |
+| Lightning bolt, 6d6 within 60 ft | 9 | 6 x 1.5. Same problem as the fireball | 3 |
+| Ignite a gas pocket or drop a cracked ceiling 60 ft away | 2 | 1-Mote trigger x 1.5. The world pays the rest (Release) | 1 |
+| Fog wall over a river 60 ft away | 3 | 4 buckets on loan x 1.5, halved by the river | 1 |
+| Punch a hole a foot across through a stone wall | 1 | A cubic foot of stone at touch | 1 |
+| Regrow 3d6 HP of flesh by touch | 3 | 1d6 per Mote. It stays grey until Life Force dice make it alive | 1 |
+| Counter a 6d6 spell halfway down a 40 ft corridor | 9 | 6 opposed Motes x 1.5. Over capacity: counter 4 for 6 instead | 3 |
+| Send a thought to a willing friend | 3 | Resonant mind magic, x1 | 1 |
+| Put a level 3 guard to sleep by touch | 12 (6 tuned) | 3 Motes x4 untuned (x2 tuned), and they get a Wisdom save | 3 (2 tuned) |
+| Charge a gold ring | 2 | Its full charge, at touch | 1 |
+| Fill a mercury flask | 10 | Poured in over two actions | 2 + 1 |
+| Resurrect a level 5 companion | 25 + Life Force dice | 5 per level, as a ritual over several actions | 2 per action |
 
 ### Wizard Proficiency
 
@@ -156,7 +187,7 @@ Sustained effects pay their cost again each round (for force) or each hour (for 
 - **Burn threshold = Constitution score + caster level.** Residue you don't vent becomes Burn. Each spell that takes you over the threshold gives a level of exhaustion. A short rest clears half, a long rest all.
 - **Body as fuel:** the body pays in life energy, never HP: each Life Force die gives 2 Motes. Burning HP for Motes isn't possible, which closes the loop of turning HP into Motes and back into grey flesh. **Patron loans** are repaid at 1.5x by draining Life Force dice at each long rest; any shortfall becomes a favor owed.
 
-### The Mote pool
+### The mana pool
 
 Casters can store Motes inside their own soul and carry them into dead zones. That store is the **mana pool**. Casting from it works like casting from the Flux: it still counts against capacity and still causes Burn.
 
@@ -178,6 +209,8 @@ A caster can open one Chokra at levels 1, 4, 8, 12, 16 and 20, after a month of 
 
 Half-casters (Paladin, Ranger, Artificer) use half their level. Classes keep their flavor through one tweak each, for example Sorcerers get 3 Motes per Life Force die instead of 2, Druids get double sympathy caps from nature, and Warlocks owe no interest on their first few borrowed Motes per day.
 
+**Tuning.** A caster can be tuned to a kind of magic: fire, cold, lightning and force, life, mind, or any other the DM allows. There are three ways in, and all are equal: born with it (a class or bloodline that starts tuned), training (a month under a tuned teacher), or self-improvement (taking it as the upgrade when opening a Chokra). Tuning to mind or life lowers the portal impedance one step, as described in those sections. For other kinds, the caster counts as their own small sympathetic medium: the cost is halved, with the saving capped at their proficiency bonus per action, and it stacks geometrically with other discounts.
+
 ### What a place holds
 
 | Place | Flux pool (Motes) | Refill per hour |
@@ -196,7 +229,7 @@ Metal is a pipe for the Thrum. Flux flows along it like magnetic fields in iron,
 
 **Every metal conducts.** If you touch metal that is also touching your target, you cast at touch range (x1) along it. A spear stuck in a ghoul, a chain around a prisoner and an iron railing that runs to the door all count. Two limits:
 
-- **Resistance.** The pipe leaks. Lose 1 Mote for every 10 ft of metal the spell travels, and that Mote heats the metal.
+- **Resistance.** The pipe leaks. Like a long wire, metal has resistance: a spell loses half its energy over a set distance, and the losses stack, so twice that distance leaves a quarter. Purity sets the distance. Pure, refined metal (drawn copper, fine silver, gold) loses half every 200 ft. Ordinary worked metal (bronze, steel, a spearhead) loses half every 100 ft. Rusty, corroded or scrap iron loses half every 50 ft. As a guide, about 85% arrives at a quarter of that distance and about 70% at half of it. Round the loss down, so a 1-Mote trigger still gets through a spear haft and short runs stay nearly free. The lost energy heats the metal along the way.
 - **Both ends are live.** Anyone touching the metal is part of the circuit. An enemy grabbing the other end of your chain can cast back at you just as cheaply.
 
 Each metal below does one thing to the Thrum:
