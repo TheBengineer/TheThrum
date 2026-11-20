@@ -1,6 +1,6 @@
 # The Laws of Thaumic Physics
 
-*Version 1.2. The magic system for The Thrum.*
+*Version 1.3. The magic system for The Thrum.*
 
 See also: [Examples](EXAMPLES.md) · [Open questions](OPEN_QUESTIONS.md)
 
@@ -28,7 +28,7 @@ Magic is the art of moving energy, measured in **Motes**. These seven laws are t
 3. **Loss.** Shaping is never perfect. For every 4 Motes shaped, 1 escapes as *Residue*: heat, light, noise, a smell of ozone. Residue soaks into the caster as *Burn* unless they vent it somewhere. To work out a cast, go in this order: base Motes, then the distance multiplier, then sympathy (halve, with the saving capped), then any focus discounts. Round the final cost up to a whole Mote. Loss is that final cost divided by 4, rounded up, and silver then cuts it by its grade %, rounded to the nearest whole Mote.
 4. **Distance.** Energy is cheapest where you stand. Effects at touch cost x1, within 60 ft x1.5, anywhere in sight x2, and beyond sight x4, unless a *link* (a name, hair, blood, a possession) bridges the gap at x2.
 5. **Sympathy.** Like moves like. Working with a matching medium halves the cost, because the medium does part of the shaping. It gives no energy of its own: you can't slow a river to get Motes, and every Mote still comes from a Source. The saving per action is capped by the medium's size (candle 1 Mote, torch 3, campfire 6, forge 15, river or storm 20). Working against your medium, like fire underwater, doubles it.
-6. **Release.** The world is full of stored energy: a gas pocket, a dammed river, a boulder on a slope, a tensioned rope. Magic can unlock it for the cost of a trigger (usually 1 Mote), and the world pays the rest. Whatever is released obeys the other laws, and it doesn't care whose side you're on.
+6. **Release.** The world is full of stored energy: a gas pocket, a dammed river, a boulder on a slope, a tensioned rope. Magic can unlock it for the cost of a trigger (usually 1 Mote), and the world pays the rest. Whatever is released obeys the other laws, and it doesn't care whose side you're on. A chain of releases (a flask lights the gas, the gas drops a pillar) costs only the first trigger, as long as every link is physically plausible, and setting off that trigger is the caster's action for the turn.
 7. **Saturation.** A place holds a limited pool of Flux that refills slowly. Drain it and the place goes *dead*: plants wilt, flames gutter, and casters must pay from their own pools or bodies.
 
 Two things follow from the laws rather than being separate rules. **Spread:** energy divides over everything it touches, so a blast that hits four targets gives each a quarter. **Interference:** opposed energies cancel Mote for Mote, and because of Conservation the cancelled energy bursts out where they meet.
@@ -69,7 +69,7 @@ Living flesh carries **life force**; dead matter doesn't. The body has a limited
 - **Healers can train their reserves.** A month of practice adds one Life Force die, up to the healer's proficiency bonus.
 - **Undead.** A zombie is a body regrown entirely without life force, with its portals to the spirit realm cut off. It moves, but nobody is home.
 
-**Resurrection.** A dead body has no life force left to work with, so it can't be healed from its own reserves. Life force has to come from outside: a donor's Life Force dice, a place rich in life force, or a patron. Rebuild the body without it and you've made a zombie.
+**Resurrection.** A dead body has no life force left to work with, so it can't be healed from its own reserves. Life force has to come from outside: a donor's Life Force dice, a patron, or one of the very few special places (an ancient grove, a sacred spring) with life force to spare. An ordinary Rich place doesn't hold enough to matter. Rebuild the body without it and you've made a zombie.
 
 **Animal donors.** Life force from an animal works, but cross-species impedance steals 2/3 of it, so you need three times as much. The patient's spirit also takes on some of the animal's traits for a few days. Monkey life leaves you craving bananas; wolf life makes you restless at the full moon.
 
@@ -88,6 +88,8 @@ To affect a mind, magic has to reach through the portal and act on the soul's si
 **Death and resurrection.** When the body dies, the portal closes but the soul still exists. Its skin slowly erodes into Chaos, over about 10 days as a starting value. Bringing someone back means repairing the body (see Life and healing) and then reopening the portal with tuned magic (5 Motes per level of the dead) before the skin dissolves. That is far more than one action allows, so resurrection is a ritual: one caster or a circle pours in up to capacity each action until the cost is paid, while someone keeps the portal tuned the whole time (see Reconnection).
 
 - **Reconnection.** Healing the body isn't enough: mind and body have to re-link. While the body's ports stand open and empty, other things may come knocking, such as wandering souls or something from the Chaos. The caster has to keep the portal tuned to the right soul; a strong link (hair, a true name, a loved one present) makes that easier, and a weak one invites possession.
+
+  **What lives in the Chaos.** Whatever common sense says lurks in the void, from hungry mindless things to hungry thinking ones like demons. They are drawn to open portals and empty bodies. The details are left to the DM.
 - **Soul aging.** A soul cut off from its body loses its physical anchor and ages fast: **10 years per day** dead. Someone revived after 3 days returns as a 30-years-older soul in their young body. They think, move and tire like an older person. Some of that fades over the next few weeks, but not all of it.
 - **The clock.** Aging and skin erosion run together. By day 10 the soul is a century older and its skin is nearly gone into Chaos, so late resurrections are both harder and costlier for the person who comes back.
 
@@ -149,6 +151,29 @@ Common spells and actions, worked out with the laws: base Motes, then distance (
 | Charge a gold ring | 2 | Its full charge, at touch | 1 |
 | Fill a mercury flask | 10 | Poured in over two actions | 2 + 1 |
 | Resurrect a level 5 companion | 25 + Life Force dice | 5 per level, as a ritual over several actions | 2 per action |
+
+### Stored energy for Release
+
+**Magic converts, then physics takes over.** The laws only cover turning Motes into physical energy and back. Once that's done, real physics runs the rest. Light a barrel of oil and you get a pool of lukewarm oil burning weakly on its surface until it heats up, and only then a hot oil fire. The DM makes an educated guess from the setting. Olive or lamp oil barely burns without a wick or a lot of heat. An alchemical solvent can flash all at once, and that's a real problem.
+
+The table shows what common stores give back when a trigger (usually 1 Mote, plus distance) sets them off. Falling and swinging things use real physics at 5 kJ per Mote. Burst means what happens in the first round. Spread divides it over everything in the area.
+
+| Store | Burst (Motes) | Area | Afterwards |
+| --- | --- | --- | --- |
+| Portcullis or 500 lb weight dropping 10 ft | 1 | One target under it | Blocks the way |
+| Catapult or ballista, cocked | 4 | One target along its line | Needs rewinding |
+| A ton of rock dropping 10 ft | 6 | 10 ft | Rubble, difficult terrain |
+| Felled tree | 10 | A 5 ft wide line its height long | Blocks the path |
+| Cracked vault ceiling | 10 to 20 | 20 ft | Buries what's under it |
+| Boulder rolling down a slope | 15 to 20 | A 5 ft wide line down the slope | Keeps rolling to the bottom |
+| Flask or barrel of lamp or olive oil | 0 | Its surface | Smoulders; with a wick or strong heat it builds to a hot oil fire over minutes |
+| Alchemical solvent (spirits, naphtha) | 10 per gallon | 10 ft per gallon | Flashes at once, then burns out fast |
+| Marsh gas pocket | 16 | 20 ft | Flames on the water for a round |
+| Keg of black powder (if it exists) | 40 | 30 ft | Smoke, deafening |
+| A blazing forge or kiln | 10 | 10 ft | Heat burst; the forge goes cold |
+| Mill dam or millpond | 30 per round for a minute | A flood down the channel | Mud and wreckage |
+| Lightning drawn from a storm | 40 | One strike point and 10 ft around it | Needs a storm overhead |
+| Rockslide or avalanche | 100 or more | A whole slope | Changes the map |
 
 ### Wizard Proficiency
 
@@ -229,7 +254,8 @@ Metal is a pipe for the Thrum. Flux flows along it like magnetic fields in iron,
 
 **Every metal conducts.** If you touch metal that is also touching your target, you cast at touch range (x1) along it. A spear stuck in a ghoul, a chain around a prisoner and an iron railing that runs to the door all count. Two limits:
 
-- **Resistance.** The pipe leaks. Like a long wire, metal has resistance: a spell loses half its energy over a set distance, and the losses stack, so twice that distance leaves a quarter. Purity sets the distance. Pure, refined metal (drawn copper, fine silver, gold) loses half every 200 ft. Ordinary worked metal (bronze, steel, a spearhead) loses half every 100 ft. Rusty, corroded or scrap iron loses half every 50 ft. As a guide, about 85% arrives at a quarter of that distance and about 70% at half of it. Round the loss down, so a 1-Mote trigger still gets through a spear haft and short runs stay nearly free. The lost energy heats the metal along the way.
+- **Resistance.** The pipe leaks. Like a long wire, metal has resistance: a spell loses half its energy over a set distance, and the losses stack, so twice that distance leaves a quarter. Purity sets the distance. Silver and gold lose half every 200 ft. Ordinary worked metal (copper, bronze, steel, a spearhead) loses half every 100 ft. Rusty, corroded or scrap iron loses half every 50 ft. As a guide, about 85% arrives at a quarter of that distance and about 70% at half of it. Round the loss down, so a 1-Mote trigger still gets through a spear haft and short runs stay nearly free. The lost energy heats the metal along the way.
+- **Thickness.** A conductor carries only so much per action. A wire carries 2 Motes, a rod, spear or sword carries 10, and a beam, railing or anchor chain has no practical limit. Push more through and the excess bursts out as heat where the conductor starts, burning the caster's hand and melting a wire.
 - **Both ends are live.** Anyone touching the metal is part of the circuit. An enemy grabbing the other end of your chain can cast back at you just as cheaply.
 
 Each metal below does one thing to the Thrum:
@@ -302,7 +328,7 @@ Silver focuses and tuned gems come in grades. The grade sets the percentage: for
 
 - Flask (1 lb, 25 gp): 10 Motes. Thrown as a ranged attack, 20/60 ft. On a miss it bursts a few feet off target.
 - Jug (5 lb): 30 Motes. Needs two hands and throws only 10/30 ft.
-- Basin: 100 Motes and can't be moved. A circle of casters fills it over an hour, and a copper line carries the release to a patient or workpiece. A basin can regrow a whole body, but making the flesh alive still takes Life Force dice.
+- Basin: 100 Motes and can't be moved. A circle of casters fills it over an hour, and a heavy copper bar carries the release (a wire would melt) to a patient or workpiece. A basin can regrow a whole body, but making the flesh alive still takes Life Force dice.
 
 **Rules of thumb for the DM and LLM.**
 
