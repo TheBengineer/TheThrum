@@ -1,6 +1,6 @@
 # Examples: test runs
 
-Worked examples of the rules in [RULES.md](RULES.md) applied to play. Version 1.0.
+Worked examples of the rules in [RULES.md](RULES.md) applied to play. Version 1.1.
 
 ## Test run 1: Ghouls in a flooded crypt
 

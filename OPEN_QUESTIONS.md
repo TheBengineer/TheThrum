@@ -1,6 +1,6 @@
 # Open questions
 
-Rules still to be decided for [RULES.md](RULES.md). Version 1.0.
+Rules still to be decided for [RULES.md](RULES.md). Version 1.1.
 
 - **Mind and life magic.** Now covered in Mind and soul. Still open: how does a caster become tuned (a feat, training time, a class feature), and what lives in the Chaos outside souls? Also open: a complexity scale for mental effects (duration and degree of control), whether repeat attempts are allowed, whether a target notices, and how someone defends against their true name being used?
 - **Healing.** Now covered in Life and healing. Still open: can food refill Life Force dice mid-adventure, and how much life force does a Rich place give?

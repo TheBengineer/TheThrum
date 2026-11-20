@@ -1,6 +1,6 @@
 # The Laws of Thaumic Physics
 
-*Version 1.0. The magic system for The Thrum.*
+*Version 1.1. The magic system for The Thrum.*
 
 See also: [Examples](EXAMPLES.md) · [Open questions](OPEN_QUESTIONS.md)
 
@@ -24,12 +24,12 @@ The Flux is a basic property of the world and has always been there, like gravit
 Magic is the art of moving energy, measured in **Motes**. These seven laws are the whole system. Any spell a player can describe is legal if they can pay for it under these laws.
 
 1. **Conservation.** Motes are never created or destroyed, only moved and changed. Every effect costs exactly the energy of the physical change it makes (see the conversion table). Energy taken out of something, like heat pulled from water, has to go somewhere.
-2. **Source.** Every Mote comes from somewhere: the *ambient Flux* of a place, the caster's *body*, consumed *matter* (reagents, crystals), or a *patron* who lends it and wants it back with interest.
+2. **Source.** Every Mote comes from somewhere: the *ambient Flux* of a place, the caster's own mana pool, a store such as gold or a gem crystal, the caster's body (Life Force dice), or a *patron* who lends it and wants it back with interest.
 3. **Loss.** Shaping is never perfect. For every 4 Motes shaped, 1 escapes as *Residue*: heat, light, noise, a smell of ozone. Residue soaks into the caster as *Burn* unless they vent it somewhere. To work out a cast, go in this order: base Motes, then the distance multiplier, then sympathy (halve, with the saving capped), then any focus discounts. Round the final cost up to a whole Mote. Loss is that final cost divided by 4, rounded up, and silver then cuts it by its grade %, rounded to the nearest whole Mote.
 4. **Distance.** Energy is cheapest where you stand. Effects at touch cost x1, within 60 ft x1.5, anywhere in sight x2, and beyond sight x4, unless a *link* (a name, hair, blood, a possession) bridges the gap at x2.
 5. **Sympathy.** Like moves like. Working with a matching medium halves the cost, because the medium does part of the shaping. It gives no energy of its own: you can't slow a river to get Motes, and every Mote still comes from a Source. The saving per action is capped by the medium's size (candle 1 Mote, torch 3, campfire 6, forge 15, river or storm 20). Working against your medium, like fire underwater, doubles it.
 6. **Release.** The world is full of stored energy: a gas pocket, a dammed river, a boulder on a slope, a tensioned rope. Magic can unlock it for the cost of a trigger (usually 1 Mote), and the world pays the rest. Whatever is released obeys the other laws, and it doesn't care whose side you're on.
-7. **Saturation.** A place holds a limited pool of Flux that refills slowly. Drain it and the place goes *dead*: plants wilt, flames gutter, and casters must pay from their own bodies.
+7. **Saturation.** A place holds a limited pool of Flux that refills slowly. Drain it and the place goes *dead*: plants wilt, flames gutter, and casters must pay from their own pools or bodies.
 
 Two things follow from the laws rather than being separate rules. **Spread:** energy divides over everything it touches, so a blast that hits four targets gives each a quarter. **Interference:** opposed energies cancel Mote for Mote, and because of Conservation the cancelled energy bursts out where they meet.
 
@@ -91,7 +91,7 @@ This makes mind casters a specialty: anyone can try, but without tuning it's fou
 
 ## Life Basics
 
-These benchmarks anchor the numbers. Since 1 Mote is about 1d6 (3.5 damage), a farmer dies to one or two Motes, and even a legendary hero falls to a couple dozen.
+These benchmarks anchor the numbers. Since 1 Mote is about 1d6 (3.5 damage), a farmer (12 HP) dies to three or four Motes, and even a legendary hero falls to a couple dozen.
 
 | Who | HP | Life Force Dice 1d6 |
 | --- | --- | --- |
@@ -114,10 +114,10 @@ These benchmarks anchor the numbers. Since 1 Mote is about 1d6 (3.5 damage), a f
 | --- | --- |
 | Lift 250 lb by 10 ft | Holding it up costs 1 Mote per round |
 | 1d6 base damage to one target (armor, cover and resistances still apply) | Heat, cold, force, lightning, all the same energy |
-| Freeze a bucket of water (a gentle heat move: 10 Motes of heat for 1 Mote spent) | See the heat rule below; the heat still has to go somewhere |
+| Freeze a bucket of water (a heat loan) | See Heat loans below; the loan is repaid when the ice melts |
 | Shape or shatter a cubic foot of stone | Once shaped, it stays; matter has no duration |
 | Light a room for an hour | Or a blinding flash for one round |
-| Heal 1d4 | Untuned only; tuned healing works differently, see Life and healing |
+| Regrow 1d6 HP of flesh | It stays grey until Life Force dice make it alive; see Life and healing |
 
 ### Wizard Proficiency
 
@@ -176,7 +176,7 @@ Regeneration pulls from the place's Flux pool, so it stops in a dead zone and co
 
 A caster can open one Chokra at levels 1, 4, 8, 12, 16 and 20, after a month of training or a meaningful event in play (a ley-line vigil, a near-death experience, a mentor's rite), up to six in total. These are starting values.
 
-Half-casters (Paladin, Ranger, Artificer) use half their level. Classes keep their flavor through one tweak each, for example Sorcerers pay 1 HP per Mote, Druids get double sympathy caps from nature, and Warlocks owe no interest on their first few borrowed Motes per day.
+Half-casters (Paladin, Ranger, Artificer) use half their level. Classes keep their flavor through one tweak each, for example Sorcerers get 3 Motes per Life Force die instead of 2, Druids get double sympathy caps from nature, and Warlocks owe no interest on their first few borrowed Motes per day.
 
 ### What a place holds
 
@@ -199,7 +199,7 @@ Metal is a pipe for the Thrum. Flux flows along it like magnetic fields in iron,
 - **Resistance.** The pipe leaks. Lose 1 Mote for every 10 ft of metal the spell travels, and that Mote heats the metal.
 - **Both ends are live.** Anyone touching the metal is part of the circuit. An enemy grabbing the other end of your chain can cast back at you just as cheaply.
 
-**The metal scale.** Each metal sits on one dial from sap to amplify:
+Each metal below does one thing to the Thrum:
 
 ### Lead: swallows
 
@@ -308,12 +308,12 @@ The DM stays in charge. The LLM is a physics engine that the DM and players can 
 **What it gives back, every time, in this order:**
 
 1. **Energy path.** Where the Motes come from and where they end up, including waste.
-2. **Cost.** One line of math: conversions, then distance and sympathy.
+2. **Cost.** One line of math: conversions, then distance, sympathy and focus discounts, rounded up (see Loss).
 3. **Can they do it?** Against capacity, the Flux pool and Burn. If not, the closest version that works.
 4. **What happens.** The outcome, including side effects the laws imply but the player didn't ask for.
 5. **Ledger update.** Flux left, Burn taken, debt owed.
 
-**Precedent log.** Every ruling gets a one-line entry ("Igniting a gas pocket: 1-Mote trigger, releases 4d6 in 20 ft"). The log is pasted back in each session, so the same trick always works the same way. This is what lets players build their own systems: once a ruling exists, they can rely on it. Answers from a player's side session go in the log only after the DM confirms them.
+**Precedent log.** Every ruling gets a one-line entry ("Igniting a gas pocket: 1-Mote trigger, releases about 16 Motes across 20 ft"). The log is pasted back in each session, so the same trick always works the same way. This is what lets players build their own systems: once a ruling exists, they can rely on it. Answers from a player's side session go in the log only after the DM confirms them.
 
 Starter prompt for the LLM:
 
