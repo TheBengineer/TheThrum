@@ -1,6 +1,6 @@
 # The Laws of Thaumic Physics
 
-*Version 1.3. The magic system for The Thrum.*
+*Version 1.4. The magic system for The Thrum.*
 
 See also: [Examples](EXAMPLES.md) · [Open questions](OPEN_QUESTIONS.md)
 
@@ -208,9 +208,30 @@ Sustained effects pay their cost again each round (for force) or each hour (for 
 
 ### Motes in the hands of a Caster
 
-- **Capacity = half caster level (round up)** **+ spellcasting modifier.** The most Motes you can shape in one action. A level 5 caster with +4 handles 7, enough for about 4d6 at range: roughly half of a same-level adventurer's HP. By default a caster works at capacity: a fireball into a crowd uses all 7 and Spread divides the damage. Going over happens only when the player says their character strains, giving it everything. Straining takes a check: d20 + spellcasting modifier + proficiency against DC 10 + 2 per Mote over. Miss by 1 to 4 and it works but hurts (1d6 and double Residue); by 5 to 9 it goes off wrong; by 10 or more it fails, drops you to 0 HP and kills the local Flux for a day.
+- **Capacity = half caster level (round up)** **+ spellcasting modifier.** The most Motes you can shape in one action. A level 5 caster with +4 handles 7, enough for about 4d6 at range: roughly half of a same-level adventurer's HP. By default a caster works at capacity: a fireball into a crowd uses all 7 and Spread divides the damage. Going over happens only when the player says their character strains, giving it everything. Straining doesn't take a separate check: going over capacity adds strain to the casting roll, based on how far over you push (see The casting roll).
 - **Burn threshold = Constitution score + caster level.** Residue you don't vent becomes Burn. Each spell that takes you over the threshold gives a level of exhaustion. A short rest clears half, a long rest all.
 - **Body as fuel:** the body pays in life energy, never HP: each Life Force die gives 2 Motes. Burning HP for Motes isn't possible, which closes the loop of turning HP into Motes and back into grey flesh. **Patron loans** are repaid at 1.5x by draining Life Force dice at each long rest; any shortfall becomes a favor owed.
+
+### The casting roll
+
+The laws say what a spell can do and what it costs. The casting roll says how well the caster pulls it off. The player says what they're trying to do, pays the Motes, and rolls d20 + spellcasting modifier, minus any strain. The DM reads the total on the scale below and frames it so it means something at the table. Damage dice and the target's saves still apply on top.
+
+**Strain.** Straining is part of this same roll. How far over capacity you push, as a share of your capacity, sets the strain, and each point of strain slides the whole scale up by one (with 1 point, a 2 no longer works and a 3 barely does). Up to a quarter over is 2 points. Up to half over is 5 points. Up to double your capacity is 10 points. Nobody can push past double. For a level 5 caster with capacity 7, that means 8 Motes is 2 points, 9 or 10 Motes is 5 points, and 11 to 14 Motes is 10 points.
+
+| Total | Result |
+| --- | --- |
+| 1 or less | Doesn't work. The energy comes back at the caster. |
+| 2 to 4 | Barely works, in the least technically possible way. A 2 works only to a tiny degree. "I cast fireball to light him on fire." Roll: 2. "His mustache is burning." |
+| 5 to 9 | Mediocre. It works, but the effect wanes: half the damage or duration, a wobbly aim, a short-lived result. |
+| 10 to 14 | Works as intended. |
+| 15 or more | Works with pep and vigor: a little extra, like a longer duration, a cleaner shape, or a useful side effect. |
+| Natural 20 | Spectacular, whatever the total. The DM helps steer the result into something memorable and meaningful for the players. |
+
+**Where the leftover energy goes.** Conservation still holds. On a total below 10, whatever energy the spell didn't spend on the task ends up as chaotic aftereffects and side effects nearby, as the DM decides. A fireball rolls a 5: his shirt is on fire, and now the tapestry is too. Only on a full failure (1 or less) does the energy come back at the caster, as Burn or as damage at the DM's call.
+
+**Natural 1.** On top of whatever the total says, a natural 1 is a mishap: some of the energy goes somewhere it shouldn't, as the DM decides, and the Residue is doubled.
+
+The roll never changes the cost or creates energy. A great roll shapes the same Motes better, and a bad one wastes them.
 
 ### The mana pool
 

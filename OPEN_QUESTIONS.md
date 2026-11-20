@@ -1,6 +1,6 @@
 # Open questions
 
-Rules still to be decided for [RULES.md](RULES.md). Version 1.3.
+Rules still to be decided for [RULES.md](RULES.md). Version 1.4.
 
 None of the core questions are open right now.
 

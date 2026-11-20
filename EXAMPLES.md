@@ -1,6 +1,6 @@
 # Examples: test runs
 
-Worked examples of the rules in [RULES.md](RULES.md) applied to play. Version 1.3.
+Worked examples of the rules in [RULES.md](RULES.md) applied to play. Version 1.4.
 
 ## Test run 1: Ghouls in a flooded crypt
 
@@ -77,7 +77,7 @@ Worked examples of the rules in [RULES.md](RULES.md) applied to play. Version 1.
 - Energy path: the warlock's own mana pool. The vault has nothing to give.
 - Full counter at mid-corridor: 6 opposed Motes x1.5 is **9**, over capacity 7.
 - Full counter at arm's length (touch, x1): **6**, within capacity. But Conservation sends the 6 cancelled Motes out right where they meet, so 6d6 of thunder lands on the warlock and fighter. That's worse than taking the bolt.
-- **What the warlock does: a partial counter at mid-corridor.** 4 opposed Motes at x1.5 cost 6, the most that fits (5 would cost 7.5, which rounds up to 8). The warlock could instead attempt the full counter with an over-capacity check, d20 + 7 against DC 14 (about 70%), but plays it safe. Those 4 cancel 20 ft away, and 4d6 of thunder hits the walls. The remaining 2d6 of lightning gets through, about 3 damage to each of the warlock and fighter.
+- **What the warlock does: a partial counter at mid-corridor.** 4 opposed Motes at x1.5 cost 6, the most that fits (5 would cost 7.5, which rounds up to 8). The warlock could instead strain for the full counter, taking 5 points of strain on the casting roll, but plays it safe. Those 4 cancel 20 ft away, and 4d6 of thunder hits the walls. The remaining 2d6 of lightning gets through, about 3 damage to each of the warlock and fighter.
 - Ledger: pool 20 to 14, 2 Burn. The LLM notes the vault's old cracked ceiling took the thunder. It's now a Release hazard.
 
 **Intent B, next round: "I bring the cracked ceiling down on the mage."**
@@ -105,7 +105,7 @@ All three re-runs worked under the current rules (capacity, mana pool, heat loan
 | Healing leaves grey flesh, which pushes the party to rest | Intended. Watch whether players find it fun or a chore | 1 |
 | Ice is slow at scale (a walkway is 92 Motes) | Keep the bucket rate, since walk-and-freeze is the intended use. Optional buff: 1 Mote per 3 buckets | 2 |
 | Heat pumping (from the old Test 2) | Closed. Heat loans leave no stolen heat to redirect | 2 |
-| The over-capacity check went unused. A full counter at d20 + 7 against DC 14 succeeds about 70% of the time | Settled: casters work at capacity by default. The check applies only when the player says the character strains ("give it everything"), and that buys extra Motes at the check's risk | 3 |
+| Straining went unused; the full counter would have meant 5 points of strain | Settled: casters work at capacity by default. The check applies only when the player says the character strains ("give it everything"), and going over capacity adds strain to the casting roll | 3 |
 | Partial casts need a rounding rule (7 / 1.5) | Settled: the final cost rounds up to a whole Mote (see Loss), so the effect drops a step when it won't fit | 3 |
 | The patron is rarely needed now that pools work in dead zones | Fine. The pool is the main tank and the patron is a costly reserve that drains Life Force dice | 3 |
 | Partial opposition (fire above water) was a judgment call | Precedent: only the medium the energy travels through counts | 1 (first run) |
