@@ -1,6 +1,6 @@
 # Examples: test runs
 
-Worked examples of the rules in [RULES.md](RULES.md) applied to play. Version 1.4.
+Worked examples of the rules applied to play. These were written for version 1.4, before the rules were simplified in 2.0 (Burn, threshold and the old range math are gone), so some numbers differ from the current books.
 
 ## Test run 1: Ghouls in a flooded crypt
 
